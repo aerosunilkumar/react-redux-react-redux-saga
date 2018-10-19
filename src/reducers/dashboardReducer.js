@@ -31,12 +31,6 @@ export default (state = initialState.dashboardData, action) => {
         todoList: [],
         fetchTodoListError: action.payload,
       };
-    case types.FETCH_COMPLETE_TODO_STARTED:
-      return {
-        ...state,
-        isLoading: true,
-        fetchTodoListError: undefined
-      };
     case types.FETCH_COMPLETE_TODO_FAILED:
       return {
         ...state,
